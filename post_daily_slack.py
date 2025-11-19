@@ -50,6 +50,6 @@ def post_to_slack(text: str):
 def main():
     if not should_send_now():
         return
-    post_to_slack(pick_message_for_today())
+    post_to_slack("Test WHS message from Github actions.")
 if __name__ == "__main__":
     main()
