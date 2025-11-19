@@ -5,8 +5,8 @@ from slack_sdk import WebClient
 from slack_sdk.errors import SlackApiError
 # ---- CONFIG ----
 TIMEZONE = "Europe/London"
-SEND_AT_HOUR = <current hour>     # 09:00 London local time
-SEND_AT_MINUTE = <current minute + 1>
+SEND_AT_HOUR = 11     # 09:00 London local time
+SEND_AT_MINUTE = 17
 SKIP_WEEKENDS = False  # set True to skip Sat/Sun
 # Env vars from GitHub Secrets
 SLACK_BOT_TOKEN = os.environ.get("SLACK_BOT_TOKEN")  # xoxb-...
