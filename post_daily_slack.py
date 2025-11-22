@@ -5,7 +5,7 @@ from slack_sdk.errors import SlackApiError
 
 # Env vars from GitHub Secrets
 SLACK_BOT_TOKEN = os.environ.get("SLACK_BOT_TOKEN")  # xoxb-...
-CHANNEL_ID = os.environ.get("SLACK_CHANNEL_ID")      # C0123ABCD
+CHANNEL_IDS = os.environ.get("SLACK_CHANNEL_IDS", "")      # C0123ABCD
 
 # Rotating WHS tips
 MESSAGES = [
@@ -32,13 +32,23 @@ def pick_message_for_today() -> str:
     return MESSAGES[idx]
 
 def post_to_slack(text: str) -> None:
-    if not SLACK_BOT_TOKEN or not CHANNEL_ID:
-        raise SystemExit("Missing SLACK_BOT_TOKEN or SLACK_CHANNEL_ID.")
+    if not SLACK_BOT_TOKEN:
+        raise SystemExit("Missing SLACK_BOT_TOKEN.")
+    if not CHANNEL_IDS:
+        raise SystemExit("Missing SLACK_CHANNEL_IDS.")
+
     client = WebClient(token=SLACK_BOT_TOKEN)
-    try:
-        client.chat_postMessage(channel=CHANNEL_ID, text=text)
-    except SlackApiError as e:
-        raise SystemExit(f"Slack error: {e.response.get('error')}")
+
+    # Split comma-separated IDs: "C0123ABCDEF,C0456GHIJKL"
+    channel_list = [c.strip() for c in CHANNEL_IDS.split(",") if c.strip()]
+
+    for channel_id in channel_list:
+        try:
+            client.chat_postMessage(channel=channel_id, text=text)
+            print(f"Sent message to {channel_id}")
+        except SlackApiError as e:
+            # Log the error but don’t stop sending to other channels
+            print(f"Slack error for {channel_id}: {e.response.get('error')}")
 
 def main() -> None:
     # Always send exactly one message whenever GitHub runs this script
