@@ -11,9 +11,9 @@ CHANNEL_ID = os.environ.get("SLACK_CHANNEL_ID")      # C0123ABCD
 MESSAGES = [
     "*Safe to Go Tip :safetogo: :* Use your powerzone: Keeping items in your powerzone — the area from mid-thigh to mid-chest — helps you stay safe when lifting, lowering, and turning.",
    
-    "*Safe to Go Tip :* :safetogo: The right equipment for the job: Using correct personal protective equipment (PPE), like gloves for proper grasping, reduces the risk of musculoskeletal disorders (MSDs) such as sprains and strains.",
+    "*Safe to Go Tip :* :safetogo:: The right equipment for the job: Using correct personal protective equipment (PPE) :gloves: , like gloves for proper grasping, reduces the risk of musculoskeletal disorders (MSDs) such as sprains and strains.",
    
-    "*Safe to Go Tip:* Switch sides: Alternating between your left and right sides helps your body maintain balance and reduces strain.",
+    "*Safe to Go Tip:* :safety_vest: Switch sides: Alternating between your left and right sides helps your body maintain balance and reduces strain.",
    
     "*Safe to Go Tip:* Practise the team lift: Test the weight before lifting and use both hands. Ask for help if an item is too heavy or awkward.",
    
