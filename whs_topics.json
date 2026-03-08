@@ -171,11 +171,15 @@
         {
           "id": 1,
           "title": "Report Spills Immediately",
+          "spot_question": "Can you spot the hazard in this walkway?",
+          "image": "https://raw.githubusercontent.com/georaaru/WHS-v2/main/wet_floor_02.gif",
           "text": "Report any liquid spills immediately to prevent slip hazards and initiate clean-up procedures - use of Radios throughout the FC or approach leadership team for help. Do not assume someone else has reported it."
         },
         {
           "id": 2,
           "title": "Use Warning Signage",
+          "spot_question": "Report it right away",
+          "image": "https://raw.githubusercontent.com/georaaru/WHS-v2/main/wet_floor_01.gif",
           "text": "Place wet floor signage/cones in visible locations where spills are observed. Ensure signs remain in place until the surface is completely dry and safe for normal traffic."
         },
         {
