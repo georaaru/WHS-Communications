@@ -22,6 +22,8 @@
         {
           "id": 4,
           "title": "Practise The Team Lift",
+           "spot_question": "Can you spot the hazard in this walkway?",
+          "image": "https://raw.githubusercontent.com/georaaru/WHS-v2/main/floor_hazards_02.gif",
           "text": "Test the weight before lifting and use both hands. Ask for help if an item is too heavy or awkward."
         },
         {
@@ -130,11 +132,15 @@
         {
           "id": 1,
           "title": "Use Handrails",
+          "spot_question": "Can you spot the hazard in this walkway?",
+          "image": "https://raw.githubusercontent.com/georaaru/WHS-v2/main/stair_safety_01.gif",
           "text": "Always use the handrail when ascending or descending stairs. Handrails provide stability and significantly reduce fall risk, especially when carrying light items."
         },
         {
           "id": 2,
           "title": "One Step At A Time",
+          "spot_question": "Can you spot the hazard in this walkway?",
+          "image": "https://raw.githubusercontent.com/georaaru/WHS-v2/main/stair_safety_02.gif",
           "text": "Avoid rushing or skipping steps. Maintain a steady pace and ensure your full foot is placed securely on each step."
         },
         {
@@ -216,7 +222,9 @@
         {
           "id": 1,
           "title": "Push Carts Safely",
-          "text": "Push carts using designated handles and ensure your path is clear. Maintain full visibility ahead before moving."
+          "spot_question": " ",
+          "image": "https://raw.githubusercontent.com/georaaru/WHS-v2/main/ocs_01.gif",
+          "text": "Push carts using designated handles and ensure your path is clear. Maintain full visibility ahead before moving. Apply both brakes when carts are stationary"
         },
         {
           "id": 2,
@@ -257,11 +265,15 @@
         {
           "id": 1,
           "title": "Keep Eyes On Your Path",
+          "spot_question": "Scan surroundings always",
+          "image": "https://raw.githubusercontent.com/georaaru/WHS-v2/main/po_01.gif",
           "text": "Scan ahead while walking and anticipate potential hazards. Awareness reduces unexpected trips or collisions."
         },
         {
           "id": 2,
           "title": "Avoid Shortcuts",
+          "spot_question": "Stick to 5S",
+          "image": "https://raw.githubusercontent.com/georaaru/WHS-v2/main/po_02.gif",
           "text": "Use designated pedestrian walkways rather than cutting through operational areas."
         },
         {
@@ -323,6 +335,8 @@
         {
           "id": 6,
           "title": "Avoid Cluttered Zones",
+          "spot_question": "Can you spot the hazard in this walkway?",
+          "image": "https://raw.githubusercontent.com/georaaru/WHS-v2/main/floor_hazards_01.gif",
           "text": "Do not walk through cluttered areas. Clear hazards or request assistance before proceeding."
         },
         {
